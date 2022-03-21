@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 
-  <!-- https://github.com/joshbuchea/HEAD -->
 
   <!-- Recommended -->
   <meta charset="UTF-8">
@@ -15,13 +14,6 @@
   <meta name="description" content="{{ metadata.description }}">
   <meta name="generator" content="11ty">
 
-  <!-- Icons -->
-  <!-- https://favicon.io/ -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
-  <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
-
 
   <title>{{ title or metadata.title }}</title>
 
@@ -29,6 +21,20 @@
 </head>
 
 <body class="font-sans leading-normal tracking-normal text-gray-900">
+  <header class="flex justify-between items-center border p-7">
+    <div>
+      <a href="" class="text-3xl font-extrabold text-red-800">GAME READY</a>
+    </div>
+    <div class="text-sm">
+      <a href="" class="mx-8">PRODUCTS</a>
+      <a href="" class="mx-8">CLINICAL</a>
+      <a href="" class="mx-8">HELP CENTER</a>
+      <a href="" class="mx-8">BLOG</a>
+      <a href="" class="mx-8">ABOUT</a>
+      <a href="" class="mx-8 border p-4 bg-red-800 text-white font-semibold">GET GAME READY</a>
+    </div>
+    
+  </header>
 
   {{ content | safe }}
 
